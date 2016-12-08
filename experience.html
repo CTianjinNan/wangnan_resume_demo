@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>王楠-个人简历</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            王楠的简历
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >基本信息</a></li>
+                <li><a href="education.html ">教育经历</a></li>
+                <li><a href="experience.html"  class="current">工作经历</a></li>
+                <li><a href="Front-end.html">前端历练</a></li>
+                <li><a href="youInfo.html">你的信息</a></li>
+                <li><a href="blessing.html">寄语</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="page panel">
+        <section class = "info">
+            <p>2015.12-2016.10</p>
+            <p>北京中广上洋</p>
+            <p>图像算法工程师</p>
+        </section>
+
+        <div class="gallery">
+            <div id="photo-viewer"></div>
+            <div id="thumbnails">
+                <a href="img/photo-1.jpg" class="thumb active" title="teacher">
+                    <img src="img/thumb-1.jpg" alt="teacher" />
+                </a>
+                <a href="img/photo-2.jpg" class="thumb" title="student">
+                    <img src="img/thumb-2.jpg" alt="student" /></a>
+                <a href="img/photo-3.jpg" class="thumb" title="student_up">
+                    <img src="img/thumb-3.jpg" alt="student_up" /></a>
+            </div>
+        </div><!-- .gallery -->
+            <section class="description">
+                <h3 class = 'teacher active'>老师检测和跟踪</h3>
+                <p class = 'teacher active'>提取视频图片haar特征，训练级联分类器，检测老师在讲台时的身高，
+                    利用meanshift跟踪算法跟踪老师的位置，利用摄像头标定获得老师
+                    的实际身高，控制摄像头上下左右摆动形成最佳视角</p>
+                <h3 class = 'student'>学生人数统计</h3>
+                <p class = 'student'>利用肤色检测和发色检测建立人头模型，根据运动检测生成教室学生
+                    分布，利用发际线，和人头肩膀的标定大小，在一段时间内统计出
+                    学生人数，并可以更新最新人数</p>
+                <h3 class = 'student_up'>学生站立检测</h3>
+                <p class = 'student_up'>利用运动跟踪算法动态提取学生站立过程的运动趋势，编写站立运动
+                    趋势检测算法，结合分类器人体检测确定站立学生的头顶位置，控制
+                    摄像头自动对准站立的学生</p>
+                <section class="descriptionEnd"><strong>掌握技能：</strong>熟练使用vs2010，opencv，c++进行视频图像分析。</section>
+            </section>
+
+        </section><!-- .page .panel-->
+    </div><!-- .container -->
+    <footer>
+        &copy; 2016 王楠的简历
+    </footer>
+</div><!-- .wrapper -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/experience.js" charset=“utf-8”></script>
+</body>
+</html>

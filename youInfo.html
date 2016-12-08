@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>王楠-个人简历</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            王楠的简历
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >基本信息</a></li>
+                <li><a href="education.html ">教育经历</a></li>
+                <li><a href="experience.html">工作经历</a></li>
+                <li><a href="Front-end.html">前端历练</a></li>
+                <li><a href="youInfo.html"  class="current">你的信息</a></li>
+                <li><a href="blessing.html">寄语</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form method="post" action="/register" name="register">
+            <div class="one-third column">
+                <img src="img/youInfo.jpg" alt="logo" id = "logo"/>
+                <h2>让我认识你！</h2>
+                <p>欢迎浏览我的个人简历，不管你是招聘方还有同样喜欢前端技术的朋友，这个注册页面，需要你填写一些简单的信息，这些表单经过增强，并有验证功能，赶快来试一下~</p>
+            </div>
+            <div class="one-third column" id="secondColumn">
+                <h2>设置</h2>
+                <div class="name">
+                    <label for="name" class="required">用户名：</label>
+                    <input type="text" placeholder="输入你的名字"
+                           name="name" id="name" required title="请输入你的名字"/>
+                </div>
+                <div class="email">
+                    <label for="email" class="required">邮箱：</label>
+                    <input type="email" id="email" name="email" placeholder="382416171@qq.com" required title="请输入你的邮箱"/>
+                </div>
+                <div class="password">
+                    <label for="password" class="required">密码：</label>
+                    <input type="password" required id="password" name="password"/>
+                </div>
+                <div>
+                    <label for="conf-password" class="required" >确认密码:</label>
+                    <input type="password" name="conf-password" id="conf-password" autocomplete="off" required >
+                </div>
+            </div>
+            <div class="one-third column" id="thirdColumn">
+                <h2>简况</h2>
+                <div class="birthday">
+                    <label for="birthday" class="required">生日:</label>
+                    <input type="date" id="birthday" name="birthday" placeholder="1990-10-28" required/>
+                    <div id="youngContainer" class="hide">
+                        <label for="young">你还年轻~生活无限精彩~</label>
+                        <input type="checkbox" name="young" id="young"/>
+                    </div>
+                    <div class="bio">
+                        <label for="bio" >个人简介(最多140字)：</label>
+                        <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+                        <span id="bio-count" class="hide">140</span>
+                    </div>
+                    <div class="register"><input type="submit" value="确定"/></div>
+                </div>
+            </div>
+        </form>
+
+    </div><!-- .container -->
+    <footer>
+        &copy; 2016 王楠的简历
+    </footer>
+</div><!-- .wrapper -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/youInfo.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

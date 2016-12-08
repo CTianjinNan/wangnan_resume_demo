@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-cn" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>王楠-个人简历</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/angular.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            王楠的简历
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >基本信息</a></li>
+                <li><a href="education.html ">教育经历</a></li>
+                <li><a href="experience.html">工作经历</a></li>
+                <li><a href="Front-end.html">前端历练</a></li>
+                <li><a href="youInfo.html">你的信息</a></li>
+                <li><a href="blessing.html" class="current">寄语</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="onethird">
+            <p class="welcome">亲爱的朋友，在这里可以写下你对我的祝福！！</p>
+            <form>
+                To:<br>
+                <input ng-model="name" type="text" /><br>
+                Message:<br>
+                <textarea ng-model="message"></textarea>
+                <input type="submit" value="发送" />
+            </form>
+        </div>
+        <div class="two-thirds">
+            <div class="postcard">
+                <div>{{ name }}</div>
+                <p>{{ message }}</p>
+            </div>
+        </div>
+    </div><!-- .container -->
+    <footer>
+        &copy; 2016 王楠的简历
+    </footer>
+</div><!-- .wrapper -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/blessing.js"></script>
+</body>
+</html>
