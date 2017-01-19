@@ -397,3 +397,21 @@ div.number-spin-btn-container {
     overflow: hidden;
     width: 225px;
     height: 380px;}
+.works {
+    padding-left: 20px;
+    background-color: #FAE5D3;
+    position: absolute;
+    top: 22px;
+    left: 80px;
+    width: 350px;
+    height: auto;
+    border: 10px solid #AEACA8;
+
+}
+.works a {
+    color: #0c3d5d;
+}
+.works a:hover {
+    text-decoration: underline;
+    color: #1e20fa;
+}
