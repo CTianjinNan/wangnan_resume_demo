@@ -415,3 +415,12 @@ div.number-spin-btn-container {
     text-decoration: underline;
     color: #1e20fa;
 }
+
+@media(max-width : 1900px){
+    .works{
+        position: absolute;
+        top: 800px;
+        left: 50%;
+        margin-left: -175px;
+    }
+}
